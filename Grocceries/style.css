@@ -10,26 +10,22 @@ body{
 }
 ul  li a {
 	display: flex;
-	background: #ddd;
 	height: 40px;
 	width: 100px;
 	margin: 0 15px;
 	border-radius: 8px;
+	text-decoration: none;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-	            -6px -6px 10px -1px rgba(255,255,255,0.7)
-	border : 1px solid rgba(0,0,0,0);
+    color: white;
 	transition: transform 0.5s;
 	
 }
 ul a:hover{
-	box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-	            inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-	            0.5px 0.5px 0px rgba(255,255,255,1),
-	            0.5px 0.5px 0px rgba(0,0,0,0.15),
-	            0px  12px 10px -10px rgba(0,0,0,0.05);
-	border : 1px solid rgba(0,0,0,0.1);
+	border-radius: 3px;
+	background: orange;
+	color: #fff;
+	
 	transform: translateY(3px);
 }
 
@@ -79,7 +75,25 @@ ul a:hover{
 	border : 1px solid rgba(0,0,0,0.1);
 	transform: translateY(3px);
 }
+ .card-body .box #button{
+    font-family:"Roboto", sans-serif ;
+	font-size: 15px;
+	font-weight: bold;
+	background:orange;
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:black;
+	border-radius:5px ;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+ .card-body .box #button:hover{
+	background: #fff;
 
+}
 .title_2 {
 	text-align: center;
 	padding: 2rem 0;
@@ -137,7 +151,24 @@ ul a:hover{
 	            0px  12px 10px -10px rgba(0,0,0,0.05);
 	border : 1px solid rgba(0,0,0,0.1);
 	transform: translateY(3px);
-
+}
+.container_2 .box_container .box-2 #button{
+	  font-family:"Roboto", sans-serif ;
+	font-size: 15px;
+	font-weight: bold;
+	background:orange;
+	width: 140px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:black;
+	border-radius:5px ;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+.container_2 .box_container .box-2 #button:hover{
+                background: #fff;
 }
 
 .products .product-slider .box-3{
@@ -148,6 +179,99 @@ ul a:hover{
 	outline-offset:-1rem ;
 	text-align: center;
 	box-shadow: var(--box-shadow);
-	
+}
+.products .product-slider .box-3 .btn{
+	font-family:"Roboto", sans-serif ;
+	font-size: 15px;
+	font-weight: bold;
+	background:orange;
+	width: 160px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:black;
+	border-radius:5px ;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
 
 }
+.products .product-slider .box-3 .btn:hover{
+	font-size: 18px;
+	font-weight: arial-bold;
+	background: #fff;
+}
+.products .product-slider {
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+	gap: 1rem;
+
+}
+.products .product-slider .box-3{
+	padding: 1rem 1rem;
+	border-radius: .5rem;
+	background: #ddd;
+	outline: var(--outline);
+	outline-offset:-1rem ;
+	text-align: center;
+	box-shadow: box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	            -6px -6px 10px -1px rgba(255,255,255,0.7);
+	border : 1px solid rgba(0,0,0,1);
+	transition: transform 0.5s;
+}
+.products  .heading  {
+	text-align: center;
+	padding: 2rem 0;
+	padding-bottom: 3rem;
+	font-size: 3.5rem;
+	align-items: center;
+	justify-content: center;
+	color: var(--black);
+}
+.products  .heading span{
+	background: orange;
+	color: #ddd;
+	display: inline-block;
+	padding: 1.5rem 1.5rem;
+	clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+.footer{
+	background: black;
+	color: #fff;
+	border-radius: 10px;
+	
+}
+.footer .box-container4{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+	gap: 1rem;
+}
+.footer .box-container4 .box4 h3{
+	font-size: 2.5rem;
+	color: var(--white);
+	padding: 1rem 0;
+}
+.footer .box-container4 .box4 h3 i{
+	color: var(--orange);
+}
+.footer .box-container4 .box4 a{
+	text-decoration: none;
+	display: block;
+	font-size: 1.5rem;
+	color: var(--light-color);
+	padding: 1rem 0;
+
+}
+.footer .box-container4 .box4 a i{
+	color: orange;
+	padding-right:.5rem ;
+}
+.footer .box-container4 .box4 a:hover i{
+	
+	padding-right: 2rem;
+}
+.footer .box-container4 h1{
+         padding-top:9rem ;
+         color: orange;
+}
+
